@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import gonerids from '../utilities/gonerids.js';
+import { useNavigate } from 'react-router';
 
 function Watchlist({HandleRemoveWatchl , Watchl , setWatchl}) {
     const [search , setSearch] = useState('');
     const [genreList , setGenreList] = useState(['All Genre']);
     const [curGenre , setCurrGenre] = useState('All Genre');
+    const navigate = useNavigate();
     let i = 1;
 
     const handleSearch = (e) => {
@@ -37,6 +39,10 @@ function Watchlist({HandleRemoveWatchl , Watchl , setWatchl}) {
         setGenreList(['All Genre' , ...temp]);
         
     },[Watchl])
+
+    useEffect(() => {
+        navigate('/watchlist');
+      },[]);
 
 
   return (
