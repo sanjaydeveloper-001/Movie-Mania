@@ -5,9 +5,29 @@ import Banner from "./components/Banner";
 import Watchlist from "./components/Watchlist";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import MovieDetails from "./components/MovieDetails";
 
 function App() {
   let [Watchl, setWatchl] = useState([]);
+  const[currentMovie , setCurrentMovie] = useState('');
+  const[totalMovielist , setTotalMovieList] = useState([]);
+  const[contain , setContain] = useState(false);
+  const width = useState(window.innerWidth);
+
+  useEffect(()=>{
+    if(Watchl.includes(currentMovie)){
+        setContain(true);
+    }
+    else{
+        setContain(false);
+    }
+  },[Watchl])
+
+
+  let HandleMovieDetailsCard = (movieObj) =>{
+    console.log(movieObj);
+    setCurrentMovie(movieObj);
+  };
 
   let HandleAddWatchl = (movieObj) => {
     let newWatchlist = [...Watchl, movieObj];
@@ -34,26 +54,31 @@ function App() {
   return (
     <div>
       <BrowserRouter>
-        <Navbar Watchl={Watchl} />
+        <Navbar Watchl={Watchl} width={width} />
 
         <Routes>
           <Route
             path="/"
             element={
               <>
-                <Banner />
+                {currentMovie == '' ?<> <Banner totalMovielist={totalMovielist} />
                 <Movies
                   HandleAddWatchl={HandleAddWatchl}
                   HandleRemoveWatchl={HandleRemoveWatchl}
                   Watchl={Watchl}
+                  HandleMovieDetailsCard={HandleMovieDetailsCard}
+                  setTotalMovieList={setTotalMovieList}
                 />
+                </>
+                : <MovieDetails contain={contain} currentMovie={currentMovie} setCurrentMovie={setCurrentMovie} HandleAddWatchl={HandleAddWatchl} HandleRemoveWatchl={HandleRemoveWatchl} />
+                }
               </>
             }
           />
 
           <Route
             path="/Watchlist"
-            element={<Watchlist
+            element={<Watchlist 
                        HandleRemoveWatchl={HandleRemoveWatchl}
                        Watchl={Watchl} 
                        setWatchl={setWatchl} 

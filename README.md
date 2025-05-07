@@ -1,12 +1,27 @@
-# React + Vite
+# 🎬 Movie Mania
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Movie Mania** is a modern and responsive movie browser app built with **Vite + React**, styled using **Tailwind CSS**, and powered by the **TMDb API**. Users can search for movies, view detailed information, and explore trending content in a smooth and attractive UI.
 
-Currently, two official plugins are available:
+## 🚀 Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ⚛️ **React** (with Vite for blazing fast build)
+- 🎨 **Tailwind CSS** (for utility-first styling)
+- 🧠 **JavaScript** (ES6+)
+- 🎬 **TMDb API** (for real-time movie data)
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🔍 Real-time **Movie Search**
+- 🖼️ Browse movie **posters**, **titles**, and **release dates**
+- 📃 View detailed **movie descriptions**, **ratings**, and **genres**
+- 🎛️ Clean and **responsive  Tailwind
+- 🎞️ Optional: Add movies to **favorites** using localStorage
+
+## 📹 Video Demo
+
+![Watch the Demo](https://your-demo-video-link.com)
+
+> To embed a video directly (for GitHub READMEs), use a GIF or link to a video on YouTube, Loom, or a hosted video:
+
+```markdown
+[![Movie Mania Demo](https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)

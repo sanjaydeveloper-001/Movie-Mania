@@ -46,7 +46,7 @@ function Watchlist({HandleRemoveWatchl , Watchl , setWatchl}) {
             {genreList.map((genre)=>{
                 return <div onClick={()=>handleChangeGenre(genre)} className={curGenre==genre ? 'hover:cursor-pointer flex items-center h-[35px] w-[100px] bg-blue-400 justify-center rounded-xl' : 'hover:cursor-pointer flex items-center h-[35px] w-[100px] bg-gray-400/50 justify-center rounded-xl'}>{genre}</div>
             })}
-            {/* <div className=>Crime</div> */}
+            
         </div>
 
         <div className='flex flex-row justify-center'>
