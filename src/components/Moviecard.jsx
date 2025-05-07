@@ -45,7 +45,7 @@ function Moviecard({
 
       <div className="w-full flex" >
         <div className="text-white text-xl w-full p-2 text-center bg-gray-900/90 rounded-bl-xl">{title}</div>
-        <div onClick={()=>HandleMovieDetailsCard(movieObj)} className="cursor-pointer w-[15%] font-bold text-xl text-center flex items-center justify-center bg-blue-500/90 rounded-br-xl">{'>'}</div>
+        <div onClick={()=>HandleMovieDetailsCard(movieObj)} className="cursor-pointer w-[15%] font-bold text-xl text-center flex items-center justify-center bg-blue-500/90 rounded-br-xl hover:bg-blue-600/80">&#128073;</div>
       </div>
       
     </div>

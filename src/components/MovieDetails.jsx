@@ -14,9 +14,9 @@ function MovieDetails({contain , currentMovie , setCurrentMovie , HandleAddWatch
   return (
     
     <>
-        <div className='flex justify-between w-full px-15 py-5'>
-            <div className=' text-2xl font-bold'>Movie-Preview</div>
-            <div onClick={HandleRemovieDetails} className='text-xl font-bold cursor-pointer px-6 py-1 bg-blue-600/50 rounded-3xl hover:bg-blue-600/70 '>✖</div>
+        <div className='flex justify-between w-full px-15 py-5 mb-10'>
+            <div className=' text-2xl font-bold '>Movie-Preview</div>
+            <div onClick={HandleRemovieDetails} className=' font-bold cursor-pointer px-4 py-1 bg-blue-600/50 rounded-3xl hover:bg-blue-600/70 '>&#10006;</div>
         </div>
 
         <div className='w-full px-12 mb-10 flex flex-col gap-10'>
