@@ -17,11 +17,5 @@
 - 🎛️ Clean and **responsive  Tailwind
 - 🎞️ Optional: Add movies to **favorites** using localStorage
 
-## 📹 Video Demo
-
-![Watch the Demo](https://your-demo-video-link.com)
-
-> To embed a video directly (for GitHub READMEs), use a GIF or link to a video on YouTube, Loom, or a hosted video:
-
-```markdown
-[![Movie Mania Demo](https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
+- 🌐 Live Website
+- 🔗 Check it out here: https://movie-mania-gpowunisx-sanjay-developer.vercel.app/
