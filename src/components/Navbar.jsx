@@ -32,8 +32,8 @@ function Navbar({Watchl , width }) {
         </Link>
       </div>
 
-      {isOpen ? <div onClick={HandleChangeClose} className="[@media(min-width:500px)]:hidden text-2xl text-blue-900"><i className="fa-solid fa-xmark"></i></div> :
-       <div onClick={HandleChangeOpen} className="[@media(min-width:500px)]:hidden text-2xl text-blue-900"><i className="fa-solid fa-bars"></i></div>   }
+      {isOpen ? <div onClick={HandleChangeClose} className="[@media(min-width:500px)]:hidden text-4xl font-bold text-blue-900">X</div> :
+       <div onClick={HandleChangeOpen} className="[@media(min-width:500px)]:hidden text-4xl font-bold text-blue-900">≡</div>   }
 
       {isOpen ? <div className="flex flex-col items-center justify-around fixed h-[30%] w-[50%] bg-white border top-[14%] right-0">
         {Watchl.length !=0 ?

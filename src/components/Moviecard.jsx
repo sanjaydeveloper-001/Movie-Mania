@@ -22,7 +22,7 @@ function Moviecard({
 
   return (
     <div
-      className=" w-[12%] h-[50vh] m-2 bg-cover bg-center rounded-xl hover:scale-105 duration-100 flex flex-col justify-between items-end"
+      className='w-[12%] h-[50vh] m-2 bg-cover bg-center rounded-xl hover:scale-105 duration-100 flex flex-col justify-between items-end'
       style={{
         backgroundImage: `url(https://image.tmdb.org/t/p/original${poster_path})`,
       }}
@@ -44,8 +44,8 @@ function Moviecard({
       )}
 
       <div className="w-full flex" >
-        <div className="text-white text-xl w-full p-2 text-center bg-gray-900/90">{title}</div>
-        <div onClick={()=>HandleMovieDetailsCard(movieObj)} className="cursor-pointer w-[15%] text-center flex items-center justify-center bg-blue-500/90"><i className="fa-solid fa-right-to-bracket"></i></div>
+        <div className="text-white text-xl w-full p-2 text-center bg-gray-900/90 rounded-bl-xl">{title}</div>
+        <div onClick={()=>HandleMovieDetailsCard(movieObj)} className="cursor-pointer w-[15%] font-bold text-xl text-center flex items-center justify-center bg-blue-500/90 rounded-br-xl">{'>'}</div>
       </div>
       
     </div>
